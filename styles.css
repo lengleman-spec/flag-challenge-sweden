@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --blue: #0269a6;
+  --yellow: #fecc00;
+  --flag-height: 150px;
+}
+
+/* Aspect Ratio - 5:8 */
+/* height * ratioHeight / ratioWidth */
+/* height * 8/5 */
+/* 150px * 8/5 = 240px*/
