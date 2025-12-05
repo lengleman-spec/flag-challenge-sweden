@@ -10,6 +10,33 @@
 }
 
 /* Aspect Ratio - 5:8 */
-/* height * ratioHeight / ratioWidth */
+/* width = height * ratioHeight / ratioWidth */
 /* height * 8/5 */
-/* 150px * 8/5 = 240px*/
+/* 150px * 8/5 */
+/* width = calc(var(--flag-height) * 8/5 */
+
+.container {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 8 / 5);
+  background-color: var(--blue);
+  display: flex;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.stripe {
+  background-color: var(--yellow);
+  height: calc(var(--flag-height) * 1 / 5);
+}
+
+.stripe-1 {
+  align-self: center;
+  width: 100%;
+}
+
+.stripe-2 {
+  width: var(--flag-height);
+  position: absolute;
+
+  transform: rotate(90deg);
+}
